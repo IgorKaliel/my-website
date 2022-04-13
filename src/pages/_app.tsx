@@ -4,6 +4,7 @@ import type { AppProps } from 'next/app'
 
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
+import { Layout } from '../components/Layout';
 
 import * as gtag from '../data/analytics';
 
@@ -22,7 +23,9 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </ChakraProvider>
   )
 }

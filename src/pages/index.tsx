@@ -1,6 +1,10 @@
 import { NextSeo } from 'next-seo';
 import { domain } from '../data/config'
 
+import { PreviewsAbout } from '../components/PreviewsAbout';
+import { PreviousWork } from '../components/PreviousWork';
+import { PreviewsConnect } from '../components/PreviewsConnect';
+
 export default function Home() {
   return (
     <>
@@ -16,8 +20,11 @@ export default function Home() {
             'I am a Frontend Developer experienced in web development using Node, ReactJS and NextJS, focused on details and user experience.',
         }}
       />
-
-      
+    
+      <PreviewsAbout />
+      <PreviousWork />
+      <PreviewsConnect />
+        
     </>
   )
 }

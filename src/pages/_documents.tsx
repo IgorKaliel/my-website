@@ -107,6 +107,20 @@ class MyDocument extends Document {
             href="./static/favicons/favicon-16x16.png"
           />
           <link rel="manifest" href="./static/favicons/manifest.json" />
+
+          <style data-href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap">
+            @font-face {
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              src: url(Inter.woff2) format('woff2');
+              unicode-range:
+                U+0000-00FF,
+                U+0152-0153,
+                U+02BB-02BC,
+                U+2000-206F,
+            }
+          </style>
           <meta name="msapplication-TileColor" content="#ffffff" />
           <meta
             name="msapplication-TileImage"
