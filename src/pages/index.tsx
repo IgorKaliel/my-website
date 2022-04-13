@@ -1,9 +1,5 @@
-import { NextSeo } from 'next-seo';
+import { NextSeo } from 'next-seo'
 import { domain } from '../data/config'
-
-import { PreviewsAbout } from '../components/PreviewsAbout';
-import { PreviousWork } from '../components/PreviousWork';
-import { PreviewsConnect } from '../components/PreviewsConnect';
 
 export default function Home() {
   return (
@@ -21,9 +17,7 @@ export default function Home() {
         }}
       />
     
-      <PreviewsAbout />
-      <PreviousWork />
-      <PreviewsConnect />
+
         
     </>
   )
